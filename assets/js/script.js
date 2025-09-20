@@ -39,9 +39,9 @@ $(document).ready(function () {
 
     // <!-- emailjs to mail contact form data -->
     $("#contact-form").submit(function (event) {
-        emailjs.init("user_TTDmetQLYgWCLzHTDgqxm");
+        emailjs.init("sC-jKUkE0ehCNB-mK");
 
-        emailjs.sendForm('contact_service', 'template_contact', '#contact-form')
+        emailjs.sendForm('service_p13l0km', 'template_ha9qlfu', '#contact-form')
             .then(function (response) {
                 console.log('SUCCESS!', response.status, response.text);
                 document.getElementById("contact-form").reset();
@@ -59,7 +59,7 @@ $(document).ready(function () {
 document.addEventListener('visibilitychange',
     function () {
         if (document.visibilityState === "visible") {
-            document.title = "Portfolio | Jigar Sable";
+            document.title = "Portfolio | Nirbhay Chaudhary";
             $("#favicon").attr("href", "assets/images/favicon.png");
         }
         else {
@@ -107,7 +107,18 @@ function showSkills(skills) {
 function showProjects(projects) {
     let projectsContainer = document.querySelector("#work .box-container");
     let projectHTML = "";
-    projects.slice(0, 10).filter(project => project.category != "android").forEach(project => {
+    
+    // Manually select which projects to show (change these names to your preferred projects)
+    const selectedProjects = [
+        "Instagram MERN",
+        "Flipkart MERN", 
+        "ResumeGen"
+    ];
+    
+    // Filter projects to show only the selected ones
+    const projectsToShow = projects.filter(project => selectedProjects.includes(project.name));
+    
+    projectsToShow.forEach(project => {
         projectHTML += `
         <div class="box tilt">
       <img draggable="false" src="/assets/images/projects/${project.image}.png" alt="project" />
@@ -118,8 +129,7 @@ function showProjects(projects) {
         <div class="desc">
           <p>${project.desc}</p>
           <div class="btns">
-            <a href="${project.links.view}" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
-            <a href="${project.links.code}" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+            <!-- Buttons removed -->
           </div>
         </div>
       </div>
@@ -143,7 +153,6 @@ function showProjects(projects) {
 
     /* SCROLL PROJECTS */
     srtop.reveal('.work .box', { interval: 200 });
-
 }
 
 fetchData().then(data => {
@@ -249,3 +258,5 @@ srtop.reveal('.experience .timeline .container', { interval: 400 });
 /* SCROLL CONTACT */
 srtop.reveal('.contact .container', { delay: 400 });
 srtop.reveal('.contact .container .form-group', { delay: 400 });
+
+
