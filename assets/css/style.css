@@ -1,6 +1,54 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap");
 
+#experience {
+    padding: 40px 0;
+    margin: 0;
+}
+
+.experience-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.experience-item {
+    background: #f8f9fa;
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 8px;
+    border-left: 4px solid #007bff;
+}
+
+.experience-item h3 {
+    margin: 0 0 5px 0;
+    color: #333;
+}
+
+.experience-item h4 {
+    margin: 0 0 10px 0;
+    color: #666;
+    font-weight: normal;
+}
+
+.experience-item p {
+    margin: 10px 0 0 0;
+    color: #555;
+    line-height: 1.6;
+}
+
+.date {
+    font-size: 14px;
+    color: #888;
+    font-style: italic;
+}
+
+
+
+
+
+
+
 * {
   margin: 0;
   padding: 0;
