@@ -78,6 +78,7 @@ const greetingWords = [
 
 function startGreetingPreloader() {
     const preloader = document.querySelector('.loader-container');
+    const label = document.getElementById('loaderLabel');
     const greeting = document.getElementById('loaderGreeting');
 
     if (!preloader || !greeting) {
@@ -90,6 +91,9 @@ function startGreetingPreloader() {
     const isMobileViewport = window.matchMedia('(max-width: 768px)').matches;
 
     if (prefersReducedMotion) {
+        if (label) {
+            label.classList.add('is-hidden');
+        }
         greeting.textContent = greetingWords[0];
         greeting.classList.add('is-visible');
 
@@ -111,6 +115,12 @@ function startGreetingPreloader() {
 
     greeting.textContent = greetingWords[index];
     greeting.classList.add('is-visible');
+
+    setTimeout(function () {
+        if (label) {
+            label.classList.add('is-hidden');
+        }
+    }, isMobileViewport ? 250 : 350);
 
     const rotateGreetings = setInterval(function () {
         index = (index + 1) % greetingWords.length;
@@ -201,7 +211,7 @@ function showProjects(projects) {
                 const imageExtension = project.imageExt || "png";
         projectHTML += `
         <div class="box tilt">
-            <img draggable="false" src="/assets/images/projects/${project.image}.${imageExtension}" alt="project" />
+            <img draggable="false" loading="lazy" src="/assets/images/projects/${project.image}.${imageExtension}" alt="${project.name} project" />
       <div class="content">
         <div class="tag">
         <h3>${project.name}</h3>
@@ -209,8 +219,9 @@ function showProjects(projects) {
         <div class="desc">
           <p>${project.desc}</p>
           <div class="btns">
-                        ${project.links?.view && project.links.view !== '#' ? `<a href="${project.links.view}" class="btn" target="_blank" rel="noopener noreferrer">Live <i class="fas fa-external-link-alt"></i></a>` : ''}
-                        ${project.links?.code && project.links.code !== '#' ? `<a href="${project.links.code}" class="btn" target="_blank" rel="noopener noreferrer">Code <i class="fas fa-code"></i></a>` : ''}
+                        ${project.status ? `<span class="status-badge">${project.status}</span>` : ''}
+                        ${!project.status && project.links?.view && project.links.view !== '#' ? `<a href="${project.links.view}" class="btn" target="_blank" rel="noopener noreferrer">Live <i class="fas fa-external-link-alt"></i></a>` : ''}
+                        ${!project.status && project.links?.code && project.links.code !== '#' ? `<a href="${project.links.code}" class="btn" target="_blank" rel="noopener noreferrer">Code <i class="fas fa-code"></i></a>` : ''}
           </div>
         </div>
       </div>

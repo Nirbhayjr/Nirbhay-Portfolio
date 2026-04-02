@@ -47,7 +47,7 @@
     "category": "mern",
     "links": {
       "view": "https://smart-road-ai.vercel.app/",
-      "code": "#"
+      "code": "https://github.com/Nirbhayjr/SmartRoad-AI"
     }
   },
   {
@@ -55,9 +55,10 @@
     "desc": "Full-Stack Flipkart with Admin Dashboard and Paytm Payment Gateway. MERN Stack WebApp, ready to use for business.",
     "image": "flipkartmern",
     "category": "mern",
+    "status": "Coming Soon",
     "links": {
       "view": "#",
-      "code": "https://github.com/jigar-sable/flipkart-mern"
+      "code": "#"
     }
   },
   {
@@ -65,9 +66,10 @@
     "desc": "ReactJS Basic Resume Generator which will generate customized resume in few minutes on your requirements.",
     "image": "resumegen",
     "category": "mern",
+    "status": "In Development",
     "links": {
       "view": "#",
-      "code": "https://github.com/jigar-sable/resumegen"
+      "code": "#"
     }
   },
   {

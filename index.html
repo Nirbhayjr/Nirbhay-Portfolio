@@ -6,6 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Nirbhay Kumar, portfolio, Nirbhay, full stack dev, personal portfolio lifecodes, portfolio design, portfolio website, personal portfolio" />
     <meta name="description" content="Welcome to Nirbhay's Portfolio. Full-Stack Web Developer and Android App Developer" />
+    <!-- Open Graph Tags for Social Sharing -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nirbhayjr.netlify.app/">
+    <meta property="og:title" content="Nirbhay's Portfolio - Full Stack Developer">
+    <meta property="og:description" content="Full-Stack Web Developer and Android App Developer. Building amazing web applications with MERN Stack.">
+    <meta property="og:image" content="https://nirbhayjr.netlify.app/assets/images/unfrmll.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <!-- Twitter Card Tags -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://nirbhayjr.netlify.app/">
+    <meta property="twitter:title" content="Nirbhay's Portfolio - Full Stack Developer">
+    <meta property="twitter:description" content="Full-Stack Web Developer and Android App Developer. Building amazing web applications with MERN Stack.">
+    <meta property="twitter:image" content="https://nirbhayjr.netlify.app/assets/images/unfrmll.jpg">
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Nirbhay Kumar",
+      "url": "https://nirbhayjr.netlify.app/",
+      "image": "https://nirbhayjr.netlify.app/assets/images/unfrmll.jpg",
+      "jobTitle": "Full Stack Developer",
+      "email": "nirbhay1005@gmail.com",
+      "sameAs": [
+        "https://www.linkedin.com/in/nirbhayjr",
+        "https://github.com/Nirbhayjr",
+        "https://twitter.com/Nirbhayjr",
+        "https://www.instagram.com/nirbhay.jr"
+      ],
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Freelance Developer"
+      }
+    }
+    </script>
     <link rel="preload" as="image" href="./assets/images/unfrmll.jpg">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -13,6 +49,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Favicon -->
     <link id='favicon' rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-png">
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
     <title>Nirbhay's Portfolio</title>
 </head>
 <body oncontextmenu="return false">
@@ -20,7 +64,7 @@
 <!-- pre loader -->
 <div class="loader-container" aria-hidden="true">
     <div class="loader-content">
-        <p class="loader-label">Nirbhay's Portfolio</p>
+    <p class="loader-label" id="loaderLabel">Nirbhay's Portfolio</p>
         <h1 class="loader-greeting" id="loaderGreeting">Hello</h1>
     </div>
 </div>
@@ -58,16 +102,16 @@
     <div class="socials">
         <ul class="social-icons">
           <li><a class="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/nirbhayjr" target="_blank"><i class="fab fa-linkedin"></i></a></li> 
-          <li><a class="github" aria-label="GitHub" href="" target="_blank"><i class="fab fa-github"></i></a></li>
-          <li><a class="twitter" aria-label="Twitter" href="" target="_blank"><i class="fab fa-twitter"></i></a></li>
+          <li><a class="github" aria-label="GitHub" href="https://github.com/Nirbhayjr" target="_blank"><i class="fab fa-github"></i></a></li>
+          <li><a class="twitter" aria-label="Twitter" href="https://twitter.com/Nirbhayjr" target="_blank"><i class="fab fa-twitter"></i></a></li>
           <li><a class="telegram" aria-label="Telegram" href="https://t.me/nirbhayjr" target="_blank"><i class="fab fa-telegram-plane"></i></a></li>
           <li><a class="instagram" aria-label="Instagram" href="https://www.instagram.com/nirbhay.jr" target="_blank"><i class="fab fa-instagram" ></i></a></li>
-          <li><a class="dev" aria-label="Dev" href="" target="_blank"><i class="fab fa-dev"></i></a></li>
+          <li><a class="dev" aria-label="Dev.to" href="https://dev.to/nirbhayjr" target="_blank"><i class="fab fa-dev"></i></a></li>
         </ul>
       </div>
     </div>
 <div class="image">
-    <img draggable="false" class="tilt" src="./assets/images/unfrmll.jpg" alt="">
+    <img draggable="false" class="tilt" src="./assets/images/unfrmll.jpg" alt="Nirbhay Kumar - Full Stack Developer">
 </div>
 </section>
 <!-- hero section ends -->
@@ -80,7 +124,7 @@
     <div class="row">
 
     <div class="image">
-        <img draggable="false" class="tilt" src="./assets/images/frml.jpg" alt="">
+        <img draggable="false" class="tilt" src="./assets/images/frml.jpg" alt="Nirbhay's Profile Photo">
     </div>
     <div class="content">
         <h3>I'm Nirbhay</h3>
@@ -147,7 +191,7 @@
 
     <div class="box">
         <div class="image">
-        <img draggable="false" src="./assets/images/bpmce.jpg" alt="">
+        <img draggable="false" src="./assets/images/bpmce.jpg" alt="BPMCE College Logo">
         </div>
         <div class="content">
         <h3>Bachelor of Technology in 3D Animation & Graphics</h3>
@@ -158,7 +202,7 @@
 
     <div class="box">
       <div class="image">
-      <img draggable="false" src="./assets/images/jnv.jpeg" alt="">
+      <img draggable="false" src="./assets/images/jnv.jpeg" alt="JNV East Champaran School Logo">
       </div>
       <div class="content">
       <h3>JNV EAST CHAMPARAN</h3>
@@ -301,29 +345,29 @@ Submit <i class="fa fa-paper-plane"></i></button>
 
 <!-- ==== ALL MAJOR JAVASCRIPT CDNS STARTS ==== -->
 <!-- jquery cdn -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 <!-- typed.js cdn -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js" integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js" integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 <!-- particle.js links -->
-<script src="./assets/js/particles.min.js"></script>
-<script src="./assets/js/app.js"></script>
+<script defer src="./assets/js/particles.min.js"></script>
+<script defer src="./assets/js/app.js"></script>
 
 <!-- vanilla tilt.js links -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js" integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js" integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 <!-- scroll reveal anim -->
-<script src="https://unpkg.com/scrollreveal"></script>
+<script defer src="https://unpkg.com/scrollreveal"></script>
 
-<script
+<script defer
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
     ></script>
 
 <!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
 
-<script src="./assets/js/script.js"></script>
+<script defer src="./assets/js/script.js"></script>
 
 
 </script>
