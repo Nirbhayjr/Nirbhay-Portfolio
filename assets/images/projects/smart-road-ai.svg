@@ -1,0 +1,61 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="120" y1="80" x2="1080" y2="820" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#07111D"/>
+      <stop offset="1" stop-color="#1B3A57"/>
+    </linearGradient>
+    <linearGradient id="road" x1="600" y1="160" x2="600" y2="840" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#202A35"/>
+      <stop offset="1" stop-color="#0E141B"/>
+    </linearGradient>
+    <linearGradient id="lane" x1="600" y1="220" x2="600" y2="780" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F7C948"/>
+      <stop offset="1" stop-color="#FFB020"/>
+    </linearGradient>
+    <linearGradient id="scan" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#7EF9FF" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#3DB2FF" stop-opacity="0.25"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" rx="56" fill="url(#bg)"/>
+  <circle cx="180" cy="150" r="70" fill="#FFD166" fill-opacity="0.14"/>
+  <circle cx="1020" cy="140" r="92" fill="#7EF9FF" fill-opacity="0.08"/>
+  <circle cx="980" cy="760" r="140" fill="#3DB2FF" fill-opacity="0.08"/>
+  <path d="M470 120H730L882 840H318L470 120Z" fill="url(#road)" stroke="#E8EEF5" stroke-opacity="0.18" stroke-width="8"/>
+  <path d="M596 170L612 170L650 800L550 800L596 170Z" fill="#EAF2FF" fill-opacity="0.08"/>
+  <path d="M600 210V260M600 310V370M600 420V480M600 530V590M600 650V710" stroke="url(#lane)" stroke-width="18" stroke-linecap="round" stroke-dasharray="74 48"/>
+  <path d="M250 170L950 170" stroke="#7EF9FF" stroke-opacity="0.18" stroke-width="5" stroke-dasharray="18 18"/>
+  <path d="M220 780L980 780" stroke="#7EF9FF" stroke-opacity="0.18" stroke-width="5" stroke-dasharray="18 18"/>
+  <g filter="url(#shadow)">
+    <rect x="262" y="260" width="258" height="154" rx="20" fill="#0C1218" fill-opacity="0.72" stroke="#7EF9FF" stroke-opacity="0.8" stroke-width="4"/>
+    <rect x="278" y="276" width="226" height="122" rx="14" fill="none" stroke="#7EF9FF" stroke-opacity="0.5" stroke-width="2" stroke-dasharray="10 10"/>
+    <circle cx="352" cy="324" r="16" fill="#FFD166"/>
+    <rect x="392" y="308" width="82" height="14" rx="7" fill="#EAF2FF"/>
+    <rect x="392" y="334" width="118" height="14" rx="7" fill="#EAF2FF" fill-opacity="0.7"/>
+    <rect x="392" y="360" width="96" height="14" rx="7" fill="#EAF2FF" fill-opacity="0.45"/>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="680" y="460" width="262" height="164" rx="20" fill="#0C1218" fill-opacity="0.72" stroke="#7EF9FF" stroke-opacity="0.8" stroke-width="4"/>
+    <rect x="696" y="476" width="230" height="132" rx="14" fill="none" stroke="#7EF9FF" stroke-opacity="0.5" stroke-width="2" stroke-dasharray="10 10"/>
+    <rect x="735" y="504" width="58" height="28" rx="8" fill="#FFD166"/>
+    <rect x="812" y="504" width="88" height="28" rx="8" fill="#EAF2FF" fill-opacity="0.85"/>
+    <rect x="735" y="548" width="165" height="16" rx="8" fill="#EAF2FF" fill-opacity="0.7"/>
+    <rect x="735" y="574" width="120" height="16" rx="8" fill="#EAF2FF" fill-opacity="0.42"/>
+  </g>
+  <g filter="url(#shadow)">
+    <circle cx="884" cy="245" r="64" fill="#0C1218" fill-opacity="0.72" stroke="#7EF9FF" stroke-opacity="0.8" stroke-width="4"/>
+    <circle cx="884" cy="245" r="38" fill="none" stroke="url(#scan)" stroke-width="7"/>
+    <circle cx="884" cy="245" r="16" fill="#7EF9FF"/>
+  </g>
+  <path d="M350 442C390 470 430 500 472 524" stroke="#7EF9FF" stroke-width="4" stroke-opacity="0.5" stroke-dasharray="12 12"/>
+  <path d="M874 430C850 398 820 360 796 330" stroke="#7EF9FF" stroke-width="4" stroke-opacity="0.5" stroke-dasharray="12 12"/>
+  <g>
+    <text x="82" y="90" fill="#F7FAFC" font-family="Poppins, Arial, sans-serif" font-size="34" font-weight="700">Smart Road AI</text>
+    <text x="82" y="130" fill="#C7D2E0" font-family="Poppins, Arial, sans-serif" font-size="18" font-weight="500">OpenCV + YOLO traffic intelligence</text>
+  </g>
+  <defs>
+    <filter id="shadow" x="200" y="180" width="720" height="520" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+</svg>
