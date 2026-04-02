@@ -51,25 +51,23 @@
     }
   },
   {
-    "name": "Flipkart MERN",
-    "desc": "Full-Stack Flipkart with Admin Dashboard and Paytm Payment Gateway. MERN Stack WebApp, ready to use for business.",
-    "image": "flipkartmern",
+    "name": "BPMCEone",
+    "desc": "BPMCE college portal with comprehensive features. Full-Stack web application for student and faculty management.",
+    "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&h=300&fit=crop",
     "category": "mern",
-    "status": "Coming Soon",
     "links": {
-      "view": "#",
-      "code": "#"
+      "view": "https://bpmce-one.vercel.app/",
+      "code": "https://github.com/Nirbhayjr/BPMCEone"
     }
   },
   {
-    "name": "ResumeGen",
-    "desc": "ReactJS Basic Resume Generator which will generate customized resume in few minutes on your requirements.",
-    "image": "resumegen",
+    "name": "bloodconnect",
+    "desc": "Blood donation platform connecting donors and recipients. Full-Stack application for efficient blood donation management.",
+    "image": "https://images.unsplash.com/photo-1584308666744-24d5f574d63f?w=500&h=300&fit=crop",
     "category": "mern",
-    "status": "In Development",
     "links": {
-      "view": "#",
-      "code": "#"
+      "view": "https://github.com/Nirbhayjr/bloodconnect",
+      "code": "https://github.com/Nirbhayjr/bloodconnect"
     }
   },
   {

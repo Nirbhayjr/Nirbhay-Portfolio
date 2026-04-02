@@ -200,8 +200,8 @@ function showProjects(projects) {
     // Manually select which projects to show (change these names to your preferred projects)
     const selectedProjects = [
         "Smart Road AI",
-        "Flipkart MERN", 
-        "ResumeGen"
+        "BPMCEone", 
+        "bloodconnect"
     ];
     
     // Filter projects to show only the selected ones
@@ -209,9 +209,10 @@ function showProjects(projects) {
     
     projectsToShow.forEach(project => {
                 const imageExtension = project.imageExt || "png";
+        const imageSrc = project.image.startsWith('http') ? project.image : `/assets/images/projects/${project.image}.${imageExtension}`;
         projectHTML += `
         <div class="box tilt">
-            <img draggable="false" loading="lazy" src="/assets/images/projects/${project.image}.${imageExtension}" alt="${project.name} project" />
+            <img draggable="false" loading="lazy" src="${imageSrc}" alt="${project.name} project" />
       <div class="content">
         <div class="tag">
         <h3>${project.name}</h3>
