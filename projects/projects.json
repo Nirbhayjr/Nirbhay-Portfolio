@@ -53,7 +53,7 @@
   {
     "name": "BPMCEone",
     "desc": "BPMCE college portal with comprehensive features. Full-Stack web application for student and faculty management.",
-    "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&h=300&fit=crop",
+    "image": "https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=500&h=300&fit=crop",
     "category": "mern",
     "links": {
       "view": "https://bpmce-one.vercel.app/",
@@ -63,7 +63,7 @@
   {
     "name": "bloodconnect",
     "desc": "Blood donation platform connecting donors and recipients. Full-Stack application for efficient blood donation management.",
-    "image": "https://images.unsplash.com/photo-1584308666744-24d5f574d63f?w=500&h=300&fit=crop",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjQujLU_TzLOrjFUGU3DX3MpGBH525HUODPQ&s",
     "category": "mern",
     "links": {
       "view": "https://github.com/Nirbhayjr/bloodconnect",
